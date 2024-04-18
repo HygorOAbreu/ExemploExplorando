@@ -45,6 +45,8 @@ namespace ExemploExplorando.Models
                 _sobrenome = value; // caso o valor passe pela validação, o valor é atribuido à _nome.
             } 
         } 
+
+        public string nomeCompleto => $"{Nome} {sobrenome}"; 
         public int Idade 
         { 
             get => _idade;
@@ -62,7 +64,7 @@ namespace ExemploExplorando.Models
 
         public void Apresentar()
         {
-            Console.WriteLine($"Nome e sobrenome:{Nome} {sobrenome}, Idade:{Idade}");
+            Console.WriteLine($"Nome Completo:{nomeCompleto}, Idade:{Idade}");
         }
 
 
