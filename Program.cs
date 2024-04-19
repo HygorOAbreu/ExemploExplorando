@@ -1,19 +1,17 @@
 ﻿
 using ExemploExplorando.Models;
 
-//Instanciando uma classe e dando valores para a propriedade atraves do set.
-Pessoa p1 = new Pessoa();     
+//Instanciando uma classe Atraves de Construtor.
+Pessoa p1 = new Pessoa(nome: "Hygor",sobrenome: "de Abreu");   
+//Instanciando uma classe e dando valores para a propriedade atraves do set.  
 // setando (set) um valor para a propriedade.
-p1.Nome = "Hygor";
-p1.Idade = 34;
-p1.sobrenome = "de Abreu";
-
-//Instanciando uma classe e dando valores para a propriedade atraves do set.
-Pessoa p2 = new Pessoa();     
-// setando (set) um valor para a propriedade.
-p2.Nome = "Bruno";
-p2.Idade = 38;
-p2.sobrenome = "Giriotas";
+//p1.Nome = "Hygor";
+//p1.Idade = 34;
+//p1.sobrenome = "de Abreu";
+Pessoa p2 = new Pessoa("Bruno", "Giriotas");     
+//p2.Nome = "Bruno";
+//p2.Idade = 38;
+//p2.sobrenome = "Giriotas";
 
 
 //utilizando a propriedade apresentar para apresentar ao usuario uma mensagem com as informações atribuidas.

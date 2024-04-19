@@ -8,6 +8,18 @@ namespace ExemploExplorando.Models
 {
     public class Pessoa
     {   
+        //Criando o construtor.
+
+        public Pessoa()
+        {
+            
+        }
+        public Pessoa(string nome, string sobrenome)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
+
         // propriedade privadas só podem ser modificadas dentro do scopo, ou seja pela propria classe em sí.
         private string _nome;
         // criando uma validação para o nome.
@@ -29,7 +41,7 @@ namespace ExemploExplorando.Models
                 _nome = value; // caso o valor passe pela validação, o valor é atribuido à _nome.
             } 
         } 
-                public string sobrenome
+                public string Sobrenome
         { 
             // obtem um valor
             get => _sobrenome.ToUpper(); // retorna os nomes com todos os valores em maiuscúlo, => (BodyExpressions) utilizado como ponteiro (apontando para a ação que deve ser tomada)
@@ -46,7 +58,7 @@ namespace ExemploExplorando.Models
             } 
         } 
 
-        public string nomeCompleto => $"{Nome} {sobrenome}"; 
+        public string nomeCompleto => $"{Nome} {Sobrenome}"; 
         public int Idade 
         { 
             get => _idade;
