@@ -11,26 +11,26 @@ namespace ExemploExplorando.Models
         public string nomeCurso;
         public List<Pessoa> Alunos{get; set;}
 
-        public void AdicionarAluno(Pessoa aluno)
+        public void AdicionarAluno(Pessoa aluno) // adiciona um aluno a lista de alunos.
         {
             Alunos.Add(aluno);
         }
-        public void removerAluno(Pessoa aluno)
+        public void removerAluno(Pessoa aluno) // remove um aluno da lista de alunos.
         {
            Alunos.Remove(aluno);
         }
-        public void listarAlunos()
+        public void listarAlunos() /// lista todos os alunos matriculados.
         {
             Console.WriteLine("Os alunos são:");
             foreach()
             {
-                Console.WriteLine ($"{aluno}");
+                Console.WriteLine ($"{}");
             }
         }
-        public string obterAlunosMatriculado
+        public int obterAlunosMatriculado() // retorna a quantidade de alunos matriculados.
         {
-            get;
-            set;
+           int quantidade = Alunos.Count;
+           return quantidade;
         }
 
     }
