@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace ExemploExplorando.Models
@@ -8,28 +9,22 @@ namespace ExemploExplorando.Models
     public class Curso
     {
         public string nomeCurso;
-        private List<string> Pessoas = new List<string>();
+        public List<Pessoa> Alunos{get; set;}
 
-        public void adicionarAluno()
+        public void AdicionarAluno(Pessoa aluno)
         {
-            Pessoas.Add();
-
+            Alunos.Add(aluno);
         }
-        public void removerAluno(string value)
+        public void removerAluno(Pessoa aluno)
         {
-            if (string.IsNullOrEmpty(value))
-            {
-                throw new ArgumentException("o Nome não pode ser vazio");// mensagem de erro caso a propriedade não seja validada.
-            }
-
-            Pessoas.Remove(value.ToUpper());
+           Alunos.Remove(aluno);
         }
         public void listarAlunos()
         {
             Console.WriteLine("Os alunos são:");
-            foreach(string pessoa in Pessoas)
+            foreach()
             {
-                Console.WriteLine ($"{pessoa}");
+                Console.WriteLine ($"{aluno}");
             }
         }
         public string obterAlunosMatriculado
