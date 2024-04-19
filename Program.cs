@@ -18,6 +18,7 @@ p2.sobrenome = "Giriotas";
 
 //utilizando a propriedade apresentar para apresentar ao usuario uma mensagem com as informações atribuidas.
 // p1.Apresentar();
+// p2.Apresentar();
 // Instanciando a classe curso, criando uma aub categoria para os cursos de inglês.
 Curso cursoDeIngles = new Curso();
 // definindo o a nome do novo curso.
