@@ -15,16 +15,16 @@ namespace ExemploExplorando.Models
         {
             Alunos.Add(aluno);
         }
-        public void removerAluno(Pessoa aluno) // remove um aluno da lista de alunos.
+        public bool removerAluno(Pessoa aluno) // remove um aluno da lista de alunos.
         {
-           Alunos.Remove(aluno);
+           return Alunos.Remove(aluno);
         }
         public void listarAlunos() /// lista todos os alunos matriculados.
         {
-            Console.WriteLine("Os alunos são:");
-            foreach()
+            Console.WriteLine($"Os alunos do curso de {nomeCurso} são:");
+            foreach(Pessoa aluno in Alunos)
             {
-                Console.WriteLine ($"{}");
+                Console.WriteLine ($"{aluno.nomeCompleto}");
             }
         }
         public int obterAlunosMatriculado() // retorna a quantidade de alunos matriculados.
